@@ -1,4 +1,5 @@
 # SI507Final
+This is SI507 final project. This program can extract data from Linkedin and select suitable job according to users' choice.
 
 1. Download the files including tree.py, saveload.py, flaskdemo.py, cache.json, input.html, response.html. Create templates file and put input.html and response.html to templates.
 
