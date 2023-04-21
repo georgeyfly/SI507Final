@@ -14,7 +14,7 @@ Instruction for Demo:
 
 Data Structure Readme:
 
-1. Tree of 5 level
+1. Tree of 5 levels
 
 2. 1-4 level has nodes(internal nodes) whose val is questions
 
