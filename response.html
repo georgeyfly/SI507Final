@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Table Demo</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>company</th>
+            <th>location</th>
+            {% if demo=='no' %}
+            <th>function</th>
+            <th>type</th>
+            <th>salary</th>
+            <th>skill</th>
+            <th>joburl</th>
+            {% endif %}
+        </tr>
+        {% for job in jobs %}
+        <tr>
+            <td>{{job.title}}</td>
+            <td>{{job.company}}</td>
+            <td>{{job.location}}</td>
+            {% if demo=='no' %}
+            <td>{{job.function}}</td>
+            <td>{{job.type}}</td>
+            <td>{{job.salary}}</td>
+            <td>{{job.skill}}</td>
+            <td>{{job.joburl}}</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
